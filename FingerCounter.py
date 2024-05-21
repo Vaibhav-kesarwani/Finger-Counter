@@ -5,21 +5,20 @@ import HandTracingModule as htm
 
 # Set the camera dimensions
 wCam, hCam = 640, 480
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(0)  # Changed to 0 for default camera
 cap.set(3, wCam)
 cap.set(4, hCam)
 
 # Folder path where finger images are stored
 folderPath = "FingerImages"
-
-# Load the images from the folder
 myList = os.listdir(folderPath)
-print(myList)
+print("Loaded images:", myList)
+
 overlayList = []
 for imPath in myList:
     image = cv2.imread(f'{folderPath}/{imPath}')
     overlayList.append(image)
-print(len(overlayList))
+print("Number of overlay images loaded:", len(overlayList))
 
 # Initialize variables
 pTime = 0
@@ -35,23 +34,23 @@ while True:
         fingers = []
 
         # Thumb
-        if lmList[tipIds[0]][1] > lmList[tipIds[0] - 1][1]:
+        if lmList[tipIds[0]][1] > lmList[tipIds[0] - 1][1]:  # Compare x-coordinates for thumb
             fingers.append(1)
         else:
             fingers.append(0)
 
         # 4 Fingers
         for id in range(1, 5):
-            if lmList[tipIds[id]][2] < lmList[tipIds[id] - 2][2]:
+            if lmList[tipIds[id]][2] < lmList[tipIds[id] - 2][2]:  # Compare y-coordinates for other fingers
                 fingers.append(1)
             else:
                 fingers.append(0)
 
         totalFingers = fingers.count(1)
-        print(totalFingers)
+        print("Fingers array:", fingers)
+        print("Total fingers:", totalFingers)
 
-        # Ensure totalFingers is within the range of overlayList
-        if totalFingers > 0 and totalFingers <= len(overlayList):
+        if 0 <= totalFingers <= len(overlayList):
             overlayImg = overlayList[totalFingers - 1]
             h, w, c = overlayImg.shape
             if h > hCam or w > wCam:
