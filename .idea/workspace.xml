@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a648aae-d117-459c-a9b0-40b70bd68321" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FingerCounter.py" beforeDir="false" afterPath="$PROJECT_DIR$/FingerCounter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FingerImages/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/FingerImages/1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FingerImages/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/FingerImages/2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FingerImages/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/FingerImages/3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FingerImages/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/FingerImages/4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FingerImages/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/FingerImages/5.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
