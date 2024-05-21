@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a648aae-d117-459c-a9b0-40b70bd68321" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/HandTracingModule.py" beforeDir="false" afterPath="$PROJECT_DIR$/HandTracingModule.py" afterDir="false" />
-    </list>
+    <list default="true" id="8a648aae-d117-459c-a9b0-40b70bd68321" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,6 +34,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python.FingerCounter.executor": "Run",
+    "Python.HandTracingModule.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "master",
