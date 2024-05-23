@@ -24,18 +24,43 @@ for imPath in myList:
     image = cv2.resize(image, (200, 200))
     overlayList.append(image)
 
+tipIds = [4, 8, 12, 16, 20]
+
 while True:
     success, img = cap.read()
     img = detector.findHands(img)
+    handList = detector.findPosition(img, draw=False)
 
-    h, w, c = overlayList[0].shape
-    img[0:h, 0:w] = overlayList[0]
+    if len(handList) != 0:
+        fingers = []
+
+        #Thumb
+        if handList[tipIds[0]][1] < handList[tipIds[0] - 1][1]:
+            fingers.append(1)
+        else:
+            fingers.append(0)
+
+        #4 Fingers
+        for id in range(1, 5):
+            if handList[tipIds[id]][2] < handList[tipIds[id] - 2][2]:
+                fingers.append(1)
+            else:
+                fingers.append(0)
+
+        # print(fingers)
+        totalFingers = fingers.count(1)
+        print(totalFingers)
+
+        h, w, c = overlayList[totalFingers - 1].shape
+        img[0:h, 0:w] = overlayList[totalFingers - 1]
+
+        
 
     cTime = time.time()
     fps = 1 / (cTime - pTime)
     pTime = cTime
 
-    cv2.putText(img, f'FPS: {int(fps)}', (470, 50), cv2.FONT_HERSHEY_PLAIN, 3, (255, 0, 255), 3)
+    cv2.putText(img, f'FPS: {int(fps)}', (420, 50), cv2.FONT_HERSHEY_PLAIN, 3, (255, 0, 255), 3)
 
     cv2.imshow("Image", img)
     cv2.waitKey(1)
