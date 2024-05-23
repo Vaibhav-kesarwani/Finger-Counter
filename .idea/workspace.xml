@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a648aae-d117-459c-a9b0-40b70bd68321" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FingerCounter.py" beforeDir="false" afterPath="$PROJECT_DIR$/FingerCounter.py" afterDir="false" />
-    </list>
+    <list default="true" id="8a648aae-d117-459c-a9b0-40b70bd68321" name="Changes" comment="comment the full screen" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,6 +20,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Vaibhav-kesarwani/Finger-Counter.git",
+    "accountId": "c54c71c8-ce50-4da5-a7d0-89639bf463bc"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -61,6 +64,15 @@
       <option name="presentableId" value="Default" />
       <updated>1716300744750</updated>
     </task>
+    <task id="LOCAL-00001" summary="comment the full screen">
+      <option name="closed" value="true" />
+      <created>1716443834068</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1716443834069</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -76,5 +88,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="comment the full screen" />
+    <option name="LAST_COMMIT_MESSAGE" value="comment the full screen" />
   </component>
 </project>
