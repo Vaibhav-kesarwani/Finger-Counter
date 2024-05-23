@@ -26,7 +26,7 @@ for imPath in myList:
 
 while True:
     success, img = cap.read()
-    
+    img = detector.findHands(img)
 
     h, w, c = overlayList[0].shape
     img[0:h, 0:w] = overlayList[0]
