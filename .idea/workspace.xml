@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a648aae-d117-459c-a9b0-40b70bd68321" name="Changes" comment="comment the full screen" />
+    <list default="true" id="8a648aae-d117-459c-a9b0-40b70bd68321" name="Changes" comment="optimsie the xml file" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,8 +18,15 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Vaibhav-kesarwani"
+  }
+}]]></component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/Vaibhav-kesarwani/Finger-Counter.git",
@@ -72,7 +79,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716443834069</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="optimsie the xml file">
+      <option name="closed" value="true" />
+      <created>1716443986068</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1716443986068</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -89,6 +104,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="comment the full screen" />
-    <option name="LAST_COMMIT_MESSAGE" value="comment the full screen" />
+    <MESSAGE value="optimsie the xml file" />
+    <option name="LAST_COMMIT_MESSAGE" value="optimsie the xml file" />
   </component>
 </project>
