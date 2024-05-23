@@ -54,7 +54,8 @@ while True:
         h, w, c = overlayList[totalFingers - 1].shape
         img[0:h, 0:w] = overlayList[totalFingers - 1]
 
-        
+        cv2.rectangle(img, (20, 255), (170, 425), (0, 255, 0), cv2.FILLED)
+        cv2.putText(img, str(totalFingers), (48, 390), cv2.FONT_HERSHEY_PLAIN, 10, (255, 0, 0), 25)
 
     cTime = time.time()
     fps = 1 / (cTime - pTime)
