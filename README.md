@@ -1,4 +1,4 @@
-# 👋 Welcome to the Finger Counting App Repository!🔢
+# 👋 Welcome to the Finger Counting App Repository!
 
 ## Overview
 This project implements a Finger Counter using OpenCV and MediaPipe libraries. With this application, users can count the number of fingers shown in front of a webcam. It utilizes hand tracking and finger counting techniques to accurately identify and count the number of fingers displayed.
