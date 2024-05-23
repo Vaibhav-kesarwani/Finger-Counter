@@ -2,8 +2,19 @@ import cv2
 import time
 import os
 import HandTracingModule as yo
+import subprocess
 
 wCam, hCam = 640, 480
+
+# Get the screen resolution
+try:
+    screen_res = subprocess.check_output('xrandr').decode('utf-8')
+    print("Screen resolution output:", screen_res)
+    screen_res = screen_res.split("current")[1].split(",")[0].strip().split(" ")[0]
+    screen_width, screen_height = map(int, screen_res.split("x"))
+except Exception as e:
+    print("Error:", e)
+    screen_width, screen_height = 1920, 1080  # Default resolution
 
 cap = cv2.VideoCapture(0)
 cap.set(3, wCam)
@@ -62,6 +73,10 @@ while True:
     pTime = cTime
 
     cv2.putText(img, f'FPS: {int(fps)}', (420, 50), cv2.FONT_HERSHEY_PLAIN, 3, (255, 0, 255), 3)
+
+    # Resize the window to full screen
+    cv2.namedWindow("Image", cv2.WINDOW_NORMAL)
+    cv2.setWindowProperty("Image", cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
 
     cv2.imshow("Image", img)
     cv2.waitKey(1)
