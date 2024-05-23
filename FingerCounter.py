@@ -1,6 +1,7 @@
 import cv2
 import time
 import os
+import HandTracingModule as yo
 
 wCam, hCam = 640, 480
 
@@ -16,6 +17,8 @@ overlayList = []
 
 pTime = 0
 
+detector = yo.handDetector(detectionCon=0.75)
+
 for imPath in myList:
     image = cv2.imread(f'{folderPath}/{imPath}')
     image = cv2.resize(image, (200, 200))
@@ -23,6 +26,7 @@ for imPath in myList:
 
 while True:
     success, img = cap.read()
+    
 
     h, w, c = overlayList[0].shape
     img[0:h, 0:w] = overlayList[0]
@@ -31,7 +35,7 @@ while True:
     fps = 1 / (cTime - pTime)
     pTime = cTime
 
-    cv2.putText(img, f'FPS: {int(fps)}', (400, 70), cv2.FONT_HERSHEY_PLAIN, 3, (255, 0, 255), 3)
+    cv2.putText(img, f'FPS: {int(fps)}', (470, 50), cv2.FONT_HERSHEY_PLAIN, 3, (255, 0, 255), 3)
 
     cv2.imshow("Image", img)
     cv2.waitKey(1)
