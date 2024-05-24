@@ -17,7 +17,6 @@ This project implements a Finger Counter using OpenCV and MediaPipe libraries. W
 ## Demo
 [Finger-Counter.webm](https://github.com/Vaibhav-kesarwani/Finger-Counter/assets/116189379/dbe0feea-884c-4113-83fe-411acd2f7cf5)
 
-
 ## Installation
 1. Clone or download the repository.
 2. Install the required dependencies using pip:
