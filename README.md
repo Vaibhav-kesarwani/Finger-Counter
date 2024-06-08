@@ -81,7 +81,7 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 
 ## Contact
 
-If you have any questions or suggestions, feel free to reach out to me at [PORTFOLIO](https://vaibhav-kesarwani.vercel.app).
+If you have any questions or suggestions, feel free to reach out to me at [PORTFOLIO](https://vaibhavkesarwani.vercel.app).
 <br/>
 
 ### Happy Coding! 😊👀
